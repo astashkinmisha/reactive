@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import PostComp from "./PostComp";
 
+
 class PostComponents extends Component {
 
+
    state = {posts:[], postChoose: null}
+
 
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/posts')
@@ -13,10 +16,14 @@ class PostComponents extends Component {
             })
     }
 
+
     selectThisPost = (id) => {
+
        let postChoose = this.state.posts.find(value => value.id === id);
+
        this.setState({postChoose});
     }
+
     render() {
 
       let {posts, postChoose} = this.state;
