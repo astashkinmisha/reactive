@@ -11,6 +11,7 @@ class PostComponents extends Component {
             .then(PostsJsonPlaceholder => {
             this.setState({posts: PostsJsonPlaceholder})
             })
+
     }
 
     selectThisPost = (id) => {
