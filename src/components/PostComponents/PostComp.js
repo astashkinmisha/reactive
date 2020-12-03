@@ -11,6 +11,7 @@ class PostComp extends Component {
                 {item.userId}-{item.title}-{item.title}
                 <button onClick={() => selectThisPost(item.id)}>choose me</button>
             </div>
+
         );
     }
 }
