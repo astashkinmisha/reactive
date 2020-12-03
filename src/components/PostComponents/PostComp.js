@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 class PostComp extends Component {
 
-
     render() {
 
         let {item, selectThisPost} = this.props;

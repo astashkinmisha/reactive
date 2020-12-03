@@ -11,14 +11,12 @@ class PostComponents extends Component {
             .then(PostsJsonPlaceholder => {
             this.setState({posts: PostsJsonPlaceholder})
             })
-
     }
 
     selectThisPost = (id) => {
        let postChoose = this.state.posts.find(value => value.id === id);
        this.setState({postChoose});
     }
-
     render() {
 
       let {posts, postChoose} = this.state;
