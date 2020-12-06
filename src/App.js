@@ -1,22 +1,20 @@
 import React, {Component} from 'react';
-import PostComponents from "./components/PostComponents/PostComponents";
-import PostComp from "./components/PostComponents/PostComp";
-
+import AllPosts from "./components/PostComponents/AllPosts";
+import Post from "./components/Post/Post";
 
 class App extends Component {
 
 
     render() {
 
+
         return (
             <div>
-<PostComponents/>
-<PostComp/>
+                <AllPosts/>
 
             </div>
-
         );
-
     }
 }
+
 export default App;
