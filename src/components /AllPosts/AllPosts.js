@@ -17,6 +17,7 @@ class AllPosts extends Component {
         let posts = await this.PostServices.getAllPosts();
         this.setState({posts});
     }
+
         render () {
                 let {posts} = this.state
                 return (

@@ -10,7 +10,6 @@ import {
 class AllUsers extends Component {
 
     state = {users: []}
-
     UserServices = new UserServices();
 
    async componentDidMount() {

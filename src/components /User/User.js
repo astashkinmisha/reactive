@@ -4,7 +4,9 @@ class User extends Component {
 
 
     render() {
+
         let {match: {url}, item} = this.props;
+
         return (
             <div>
                 {item.id} - {item.name} - <Link to={`${url}/${item.id}`}>info</Link>
