@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SearchService from "./SearchService";
+import SearchService from ".    ./services/SearchService";
 import User from "./User";
 
 class UserSearch extends Component {
